@@ -1,5 +1,5 @@
-#ifndef clox_scanner_h 
-#define clox_scanner_h 
+#ifndef clox_scanner_h
+#define clox_scanner_h
 
 typedef enum
 {
@@ -35,4 +35,4 @@ void initScanner(const char* source);
 
 Token scanToken();
 
-#endif 
+#endif
