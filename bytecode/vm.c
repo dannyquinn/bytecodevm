@@ -184,6 +184,11 @@ static InterpretResult run()
 				push(constant);
 				break;
 			}
+			case OP_LOOP: {
+				uint16_t offset = READ_SHORT();
+				vm.ip -= offset;
+				break;
+			}
 			case OP_NEGATE:
 				if (!IS_NUMBER(peek(0))) {
 					runtimeError("Operand must be a number.");

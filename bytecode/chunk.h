@@ -20,6 +20,7 @@ typedef enum
 	OP_JUMP,
 	OP_GREATER,
 	OP_LESS,
+	OP_LOOP,
 	OP_MULTIPLY,
 	OP_NEGATE,
 	OP_NIL,
